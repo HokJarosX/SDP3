@@ -14,4 +14,8 @@ public abstract class Notification {
     }
 
     public abstract String execute();
+
+    public void setImplemintation(Channel channel){
+        this.channel = channel;
+    }
 }

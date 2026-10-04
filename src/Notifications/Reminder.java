@@ -8,6 +8,6 @@ public class Reminder extends Notification{
     }
     @Override
     public String execute(){
-        return "Reminder:" + " " + channel.send(message);
+        return channel.send("Reminder:" + " " + message);
     }
 }
