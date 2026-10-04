@@ -7,10 +7,10 @@ import Notifications.UrgentAlert;
 public class Main {
     public static void main(String[] args) {
 
-        Notification n1 = new Reminder(1, "Do homework", new EmailChannel());
-        Notification n2 = new Reminder(2, "Do homework", new SMSChannel());
-        Notification n3 = new UrgentAlert(3, "Server is down", new EmailChannel());
-        Notification n4 = new UrgentAlert(4, "Server is down", new SMSChannel());
+        Notification n1 = new Reminder(1, "test1k", new EmailChannel());
+        Notification n2 = new Reminder(2, "test2", new SMSChannel());
+        Notification n3 = new UrgentAlert(3, "test3", new EmailChannel());
+        Notification n4 = new UrgentAlert(4, "test4", new SMSChannel());
 
         System.out.println(n1.execute());
         System.out.println(n2.execute());
